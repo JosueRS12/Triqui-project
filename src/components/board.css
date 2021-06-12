@@ -1,0 +1,15 @@
+.square{
+  display: inline-block;
+  border-radius: 2px;
+  border-style: solid;
+}
+.button:hover{
+
+}
+.fil{
+  padding: 2px;
+}
+
+.board{
+  margin-left: 38vw;   
+}
