@@ -7,9 +7,10 @@
 
 }
 .fil{
-  padding: 2px;
+  padding: 0px;
 }
 
 .board{
+  display: grid;
   margin-left: 38vw;   
 }
