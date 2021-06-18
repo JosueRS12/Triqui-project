@@ -10,6 +10,10 @@
   padding: 0px;
 }
 
+button:disabled{
+  color: black;
+}
+
 .board{
   display: grid;
   margin-left: 38vw;   
