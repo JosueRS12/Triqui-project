@@ -1,6 +1,5 @@
-import React, {useState, useEffect} from 'react'
-import '../index.css' 
-import './board.css'
+import React, {useState, useEffect} from 'react';
+import './board.css';
 
 function Square(props){
   const [value,setValue] = useState('');
@@ -244,28 +243,29 @@ export default class Board extends React.Component{
   render(){
     this.fillSquare();
     return(
-      <div className="board" key={this.state.value}>
-      <h1>using hooks</h1>
-      <HowToUseHooks/>
-      <h3>Testing</h3> 
-        <div className="fil">
-          {this.state.board.map((element, i)=> {
-            const fil = i<3? <div className="butt"> {element} </div> : null; 
+      <div className="board"  key={this.state.value}>
+        <h1>using hooks</h1>
+        <HowToUseHooks/>
+        <h3>Testing</h3> 
+        
+          <div className="fil">
+            {this.state.board.map((element, i)=> {
+              const fil = i<3? <div className="butt" key={i}> {element} </div> : null; 
+              return fil;
+          })}     
+          </div>
+          <div className="fil">
+            {this.state.board.map((element, i)=> {
+             const fil = (i>=3 && i<6)? <div className="butt" key={i}> {element} </div> : null; 
+              return fil;
+          })}     
+          </div>
+          <div className="fil"> 
+            {this.state.board.map((element, i)=> {
+            const fil = (i>=6 && i<9)? <div className="butt" key={i}> {element} </div> : null; 
             return fil;
-        })}     
-        </div>
-        <div className="fil">
-          {this.state.board.map((element, i)=> {
-           const fil = (i>=3 && i<6)? <div className="butt"> {element} </div> : null; 
-            return fil;
-        })}     
-        </div>
-        <div className="fil"> 
-          {this.state.board.map((element, i)=> {
-          const fil = (i>=6 && i<9)? <div className="butt"> {element} </div> : null; 
-          return fil;
-        })}     
-        </div> 
+          })}     
+          </div> 
         <div> 
           <button type="button" className="resetButton" onClick={this.resetBoard}> ResetGame </button>
         </div>
