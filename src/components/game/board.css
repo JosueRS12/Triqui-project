@@ -23,5 +23,6 @@ button:disabled{
 
 .board{
   display: grid;
+  align-items: center;
   margin-left: 38vw;   
 }

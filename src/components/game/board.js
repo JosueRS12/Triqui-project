@@ -163,6 +163,17 @@ function VerifyEndGame(moves, setPlayerMovements, player){
   }
 }
 
+
+//amorcito
+
+const Amor = (props) =>{
+  return (
+    <div>
+      <a target="_blank" href="https://www.youtube.com/watch?v=5j2FE_K-rAA">QUIERO...</a>   
+    </div>
+  ); 
+}
+
 //hooks structure
 function HowToUseHooks(props){
   //useState
@@ -177,8 +188,9 @@ function HowToUseHooks(props){
   }); 
   return(
     <div>
+      {count == 8 ? <Amor/> : null}
       <p> valor acutal del button {count} </p>
-      <button type ="button" onClick={() => setCount(count+2)}>
+      <button type ="button" onClick={() => setCount(count+1)}>
       click on me
       </button>
     </div>
@@ -244,7 +256,7 @@ export default class Board extends React.Component{
     this.fillSquare();
     return(
       <div className="board"  key={this.state.value}>
-        <h1>using hooks</h1>
+        <h1>¿JUEGAS?</h1>
         <HowToUseHooks/>
         <h3>Testing</h3> 
         
