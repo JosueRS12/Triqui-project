@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import './board.css';
-
 function Square(props){
   const [value,setValue] = useState('');
   return(
@@ -162,14 +161,12 @@ function VerifyEndGame(moves, setPlayerMovements, player){
     alert(`ganó el jugador ${player}`);
   }
 }
-
-
 //amorcito
 
 const Amor = (props) =>{
   return (
     <div>
-      <a target="_blank" href="https://www.youtube.com/watch?v=5j2FE_K-rAA">QUIERO...</a>   
+      <a target="_blank" href="https://www.youtube.com/watch?v=5j2FE_K-rAA" rel="noreferrer"> QUIERO...</a>   
     </div>
   ); 
 }
@@ -188,7 +185,7 @@ function HowToUseHooks(props){
   }); 
   return(
     <div>
-      {count == 8 ? <Amor/> : null}
+      {count === 8 ? <Amor/> : null}
       <p> valor acutal del button {count} </p>
       <button type ="button" onClick={() => setCount(count+1)}>
       click on me
@@ -259,28 +256,29 @@ export default class Board extends React.Component{
         <h1>¿JUEGAS?</h1>
         <HowToUseHooks/>
         <h3>Testing</h3> 
-        
-          <div className="fil">
-            {this.state.board.map((element, i)=> {
-              const fil = i<3? <div className="butt" key={i}> {element} </div> : null; 
-              return fil;
-          })}     
+          <div className="all-grid">
+            <div className="grid-squares">
+              <div className="fil">
+                {this.state.board.map((element, i)=> { const fil = i<3? <div className="butt" key={i}> {element} </div> : null; return fil;
+              })}     
+              </div>
+              <div className="fil">
+                {this.state.board.map((element, i)=> {
+                 const fil = (i>=3 && i<6)? <div className="butt" key={i}> {element} </div> : null; 
+                  return fil;
+              })}     
+              </div>
+              <div className="fil"> 
+                {this.state.board.map((element, i)=> {
+                const fil = (i>=6 && i<9)? <div className="butt" key={i}> {element} </div> : null; 
+                return fil;
+              })}     
+              </div> 
+            </div>
           </div>
-          <div className="fil">
-            {this.state.board.map((element, i)=> {
-             const fil = (i>=3 && i<6)? <div className="butt" key={i}> {element} </div> : null; 
-              return fil;
-          })}     
+          <div> 
+            <button type="button" className="resetButton" onClick={this.resetBoard}> ResetGame </button>
           </div>
-          <div className="fil"> 
-            {this.state.board.map((element, i)=> {
-            const fil = (i>=6 && i<9)? <div className="butt" key={i}> {element} </div> : null; 
-            return fil;
-          })}     
-          </div> 
-        <div> 
-          <button type="button" className="resetButton" onClick={this.resetBoard}> ResetGame </button>
-        </div>
       </div>
     );
   }

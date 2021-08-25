@@ -1,26 +1,50 @@
 header{
   top: 0;
-  position: relative;
+  position: static;
+}
+.navbar-light .navbar-nav .nav-link:hover, .navbar-light .navbar-nav .nav-link:focus {
+    color: white;
+}
+.decorate-header{
+  background-color: rgba(0, 23, 111, 0.77);
+  max-height:8vh; }
+.navbar-light .navbar-nav .nav-link{
+    color: white;
 }
 
+.navbar-light .navbar-brand{ 
+    color: white;
+    border-radius: 8px;
+    border-style: solid;
+    border-color: #0000ca;
+    padding: 2px;
+}
+
+a : link {
+  color: white;
+}
 
 footer{
   bottom: 20px; 
-  position: fixed;
+  max-height: 17vh;
+  position: absolute;
   width: 100%; 
-  background-color: rgba(0, 20, 102, 0.85);
+  background-color: rgba(0, 23, 111, 0.77);
+  /*background-color: #3d4645;*/
 }
 
-.container-img{
-  position: relative;  
-  object-fit: cover;
-  height: auto;
-  width: 15vw;
+.decorate-img{
+  object-fit: contain;
+  width: inherit;
+  max-height: inherit;
 }
 
-img{
-  width:inherit;  
-  height: max-content;
+.container{
+  max-height: inherit;
+}
+
+.row{
+  max-height: inherit;
 }
 
 .social{
@@ -32,13 +56,29 @@ img{
     background-size: 50px 50px;
 }
 
-.align{
-  margin: 10px;
+.size{
+  max-height: inherit;
+  max-width:inherit;
 }
 
-.align.social{
+.font-footer{
+  padding-block-start: 14px;
+  text-align: center;
+  font-size: 80%;
+}
+
+.contact{
+  position: relative; 
+  text-align: center;
+  color: white;
+  font-style: oblique;
+  padding-block-start: 20px;
+}
+
+
+.align-social{
   text-align: right;
-  padding-block-start: 8vh;
+  padding-block-start: 5vh;
 }
 .social.github{
   background-image: url('./assets/github.svg');
@@ -47,6 +87,3 @@ img{
 .social.linkedin{
   background-image: url('./assets/linkedin.svg');
 }
-/*<div>Iconos diseñados por <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>*/
-
-
