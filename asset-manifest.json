@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Triqui-project/static/css/main.350fb367.chunk.css",
+    "main.js": "/Triqui-project/static/js/main.44a70c57.chunk.js",
+    "main.js.map": "/Triqui-project/static/js/main.44a70c57.chunk.js.map",
+    "runtime-main.js": "/Triqui-project/static/js/runtime-main.9f50288e.js",
+    "runtime-main.js.map": "/Triqui-project/static/js/runtime-main.9f50288e.js.map",
+    "static/css/2.df93ccea.chunk.css": "/Triqui-project/static/css/2.df93ccea.chunk.css",
+    "static/js/2.d6a99eb8.chunk.js": "/Triqui-project/static/js/2.d6a99eb8.chunk.js",
+    "static/js/2.d6a99eb8.chunk.js.map": "/Triqui-project/static/js/2.d6a99eb8.chunk.js.map",
+    "index.html": "/Triqui-project/index.html",
+    "static/css/2.df93ccea.chunk.css.map": "/Triqui-project/static/css/2.df93ccea.chunk.css.map",
+    "static/css/main.350fb367.chunk.css.map": "/Triqui-project/static/css/main.350fb367.chunk.css.map",
+    "static/js/2.d6a99eb8.chunk.js.LICENSE.txt": "/Triqui-project/static/js/2.d6a99eb8.chunk.js.LICENSE.txt",
+    "static/media/GLUD_LOGO.b91a64c5.svg": "/Triqui-project/static/media/GLUD_LOGO.b91a64c5.svg",
+    "static/media/index.css": "/Triqui-project/static/media/linkedin.7defd339.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9f50288e.js",
+    "static/css/2.df93ccea.chunk.css",
+    "static/js/2.d6a99eb8.chunk.js",
+    "static/css/main.350fb367.chunk.css",
+    "static/js/main.44a70c57.chunk.js"
+  ]
+}
