@@ -178,6 +178,18 @@ function HowToUseHooks(props){
   //se define el nombre (arbitrario) de la variable y su setter
   const [count, setCount] = useState(0);
   // useEffect
+  const colors = ['yellow', 'black', 'blue', 'green', 'cyan', 'orange', 'red'];
+  console.log(colors[0]); 
+  // useEffect
+  useEffect(() => {
+    if(count>0){
+      let i = Math.floor(Math.random() * 7);
+      console.log(i);
+      document.body.style.backgroundColor=`${colors[i]}`;
+      document.title = `you clicked ${count} times`;
+      console.log(`hola ${count}`);
+    }
+  }, [count]); 
   return(
     <div>
       {count === 8 ? <Amor/> : null}
