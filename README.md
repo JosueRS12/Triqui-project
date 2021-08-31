@@ -2,7 +2,7 @@
 Aplicación web del juego triqui desarrollada con ReactJS.
 Para su desarrollo se hace uso de los hooks de useState y useEffect; Además de esto, se usan los métodos del ciclo de vida en el componente Board.
 
-Puedes visitar el siguiente link [Triqui-App] (https://josuers12.github.io/Triqui-project/). 
+Puedes visitar el siguiente link [Triqui-App](https://josuers12.github.io/Triqui-project/) . 
 La aplicación web está alojada con el servicio de host que prove github pages.
 
 ## Para Correr la Aplicación en Local.
